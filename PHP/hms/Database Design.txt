@@ -1,0 +1,103 @@
+Login
+
+- id
+- username
+- password
+- usertype [1:Administrator, 2:Doctor, 3:Operator]
+
+
+Admin
+
+- id
+- loginid
+- name
+- adress
+
+
+Doctor
+
+- id
+- loginid
+- name
+- gender
+- adress
+- phone
+- email
+- experience
+- photo
+- qualification
+- specilization
+
+
+Operator
+
+- id
+- loginid
+- name
+- gender
+- address
+- phone
+- email
+- photo
+
+
+Rooms
+
+- id
+- roomno
+- type	[0: OPD, 1: Super Deluxe, 2:Deluxe, 3:Semi Deluxe, 4: General]
+- charges
+- beds
+
+
+Patient
+
+- id
+- name
+- gender
+- address
+- phone
+- email
+
+
+Admission
+
+- id
+- pid
+- did
+- rid
+- symptom
+- datein
+
+Diagnosis
+
+- id
+- aid
+- diagnosistime
+- summary
+
+
+Discharge
+
+- id
+- aid
+- summary
+- dateout
+
+
+Billing
+
+- id
+- aid
+- roomcharges
+- doctorcharges
+- pathologycharges
+- misccharges
+
+
+Payment
+- id
+- aid 
+- date
+- mode
+- amount
