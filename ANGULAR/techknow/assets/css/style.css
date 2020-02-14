@@ -1,0 +1,39 @@
+.container-fluid{
+	padding:0px;
+}
+
+.category-item{	
+	height:140px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.category-item img{
+	height:100px;
+	width:100%;
+}
+
+.product-item{
+	height:140px;
+	border-radius: 10px;
+	text-align: center;	
+}
+
+.product-item img{
+	height:100px;
+	width:100%;
+}
+
+
+.category-menu{
+	margin-top:50px;
+	list-style: none;
+}
+
+.category-menu li{
+	height:40px;
+}
+
+.category-menu li:hover{
+	background-color:lightgray;
+}

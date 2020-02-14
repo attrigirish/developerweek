@@ -1,0 +1,26 @@
+<div class="row" style="margin-top:10px;margin-bottom:10px;">
+	<div class="col-md-2 category-item" ng-repeat="category in categories">
+		<a href="#category/{{category.categoryid}}">
+		<img src="assets/images/{{category.name}}.jpg">
+		{{category.name}}
+		</a>
+	</div>
+</div>
+
+<div class="row" style="margin-top:50px;margin-bottom:10px;">
+	<h1>Top Mobile Phones</h1>
+	<div class="col-md-3 product-item" ng-repeat="mobile in mobiles | limitTo:4">
+		<img src="http://gadgetworld.000webhostapp.com/images/{{mobile.images[0].url}}">
+		<h3>{{mobile.name}}</h3>
+		<p>{{mobile.price}}</p>
+	</div>
+</div>
+
+<div class="row" style="margin-top:50px;margin-bottom:10px;">
+	<h1>Top TVs</h1>
+	<div class="col-md-3 product-item" ng-repeat="tv in tvs | limitTo:4">
+		<img src="http://gadgetworld.000webhostapp.com/images/{{tv.images[0].url}}">
+		<h3>{{tv.name}}</h3>
+		<p>{{tv.price}}</p>
+	</div>
+</div>

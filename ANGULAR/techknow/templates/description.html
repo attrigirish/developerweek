@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="col-md-4">
+		<img src="http://gadgetworld.000webhostapp.com/images/{{product.images[0].url}}" height="300px" width="300px">
+
+		<div style="float:left" ng-repeat="image in product.images">
+			<img src="http://gadgetworld.000webhostapp.com/images/{{image.url}}" height="75px" width="75px">
+		</div>
+	</div>
+	<div class="col-md-8">
+		<h1>{{product.name}}</h1>
+		<div>
+			<b>{{product.brand.name}}</b> <b>{{product.category.name}}</b>			
+		</div>
+		<h3>{{product.price|currency:'₹ '}}</h3>
+		<table class="table table-bordered">
+			<tr ng-repeat="feature in product.features">
+				<td>{{feature.name}}</td>
+				<td>{{feature.value}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
